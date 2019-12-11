@@ -4,12 +4,10 @@ export default class Accordion {
     this.activeClass = 'ativo';
   }
 
-
   toggleAccordion(item) {
     item.classList.toggle(this.activeClass);
     item.nextElementSibling.classList.toggle(this.activeClass);
   }
-
 
   // adiciona os eventos ao accordion
   addAccordionEvent() {
@@ -26,6 +24,5 @@ export default class Accordion {
       this.addAccordionEvent();
     }
     return this;
-  }  
+  }
 }
-
